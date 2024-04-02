@@ -29,7 +29,7 @@ public class HopitalApplication implements CommandLineRunner {
         patient.setNom("Mohamed");
         patient.setDateNaissance(new Date());
         patient.setMalade(false);
-        patient.setScore(23);
+        patient.setScore(203);
         patientRepository.save(patient);
 
         Patient patient2=new Patient(null,"Yassine",new Date(),false,123);
@@ -38,22 +38,11 @@ public class HopitalApplication implements CommandLineRunner {
         Patient patient3=Patient.builder()
                 .nom("Imane")
                 .dateNaissance(new Date())
-                .score(56)
+                .score(156)
                 .malade(true)
                 .build();
         patientRepository.save(patient3);
-        Patient patient4=new Patient(null,"Rayane",new Date(),false,153);
-        patientRepository.save(patient4);
-        Patient patient5=new Patient(null,"Hamid",new Date(),false,128);
-        patientRepository.save(patient5);
-        Patient patient6=new Patient(null,"Kamal",new Date(),false,593);
-        patientRepository.save(patient6);
-        Patient patient7=new Patient(null,"Youssra",new Date(),false,145);
-        patientRepository.save(patient7);
-        Patient patient8=new Patient(null,"Samir",new Date(),false,298);
-        patientRepository.save(patient8);
-        Patient patient9=new Patient(null,"Houda",new Date(),false,1723);
-        patientRepository.save(patient9);
+
 
 
 
