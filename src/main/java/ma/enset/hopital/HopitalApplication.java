@@ -26,19 +26,19 @@ public class HopitalApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         Patient patient = new Patient();
         patient.setId(null);
-        patient.setNom("Mohamed");
+        patient.setNom("Saad");
         patient.setDateNaissance(new Date());
         patient.setMalade(false);
-        patient.setScore(203);
+        patient.setScore(129);
         patientRepository.save(patient);
 
-        Patient patient2=new Patient(null,"Yassine",new Date(),false,123);
+        Patient patient2=new Patient(null,"David",new Date(),false,225);
         patientRepository.save(patient2);
 
         Patient patient3=Patient.builder()
-                .nom("Imane")
+                .nom("Sara")
                 .dateNaissance(new Date())
-                .score(156)
+                .score(134)
                 .malade(true)
                 .build();
         patientRepository.save(patient3);
